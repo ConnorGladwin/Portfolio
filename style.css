@@ -1,3 +1,6 @@
+/* TODO */
+/* Fix cross device screen alignment issuses */
+
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 /* Parameters for the page */
@@ -36,11 +39,14 @@ body {
 }
 
 svg {
-    
     border: solid 10px black;
 }
 
 /* Class Styling */
+
+.heading-container {
+
+}
 
 .heading {
     margin: 200px;
