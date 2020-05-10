@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+/* Parameters for the page */
+
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    margin: 50px 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2d3436;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* SVG Styling */
+
+#svg-height {
+    height: 200px;
+}
+
+.svg-clip {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+}
+
+svg {
+    
+    border: solid 10px black;
+}
+
+/* Class Styling */
+
+.heading {
+    margin: 5px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.subheading {
+    text-align: inherit;
+    top: 50%;
+    bottom: 50%;
+}
+
+.subSubheading {
+    color: transparent;
+    font-size: medium;
+    transition-duration: 0.3s;
+    font-size: medium;
+    position: absolute;
+    right: 50;
+    left: 50;
+    bottom: 62%;
+}
+
+.box-container {
+    height: 300px;
+    display: flex;
+    flex-direction: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 3px transparent solid;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    display: block;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.subtitle {
+    color: transparent;
+    transition-duration: 0.3s;
+    font-size: small;
+    position: absolute;
+    bottom: 50%;
+}
+
+.footer {
+    color: #636e72;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    position: absolute;
+    bottom: 50;
+    left: 42%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    color: #636e72;
+    top: 50;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 100px;
+    color: #636e72;
+}
+
+h2 {
+    font-size: 40px;
+    color: #636e72;
+}
+
+h4 {
+    color: #636e72;
+    transition-duration: 0.2s;
+}
+
+h5 {
+    text-align: center;
+}
+
+/* Animations */
+
+.box:hover h4 {
+    color: #81ecec;
+    font-size: 40px;
+}
+
+.box:hover .subtitle {
+    color: #fbc531;
+}
+
+.footer:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.Subheading:hover .subSubheading {
+    color: #fbc531;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); color: fbc531; }
+    20% { transform: translate(-3px, 0px) rotate(1deg);  }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); color: #636e72; }
+}
