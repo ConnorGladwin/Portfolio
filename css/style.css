@@ -40,7 +40,7 @@ svg {
     border: solid 10px black;
 }
 
-/* Class Styling */
+/* General Class Styling */
 
 .heading {
     margin: 10%;
@@ -48,10 +48,12 @@ svg {
 }
 
 .subheading {
-    text-align: inherit;
+    text-align: center;
     top: 50%;
     bottom: 20%;
-    margin: 0;
+    margin: auto;
+
+    width: 400px;
 }
 
 .text {
@@ -112,7 +114,7 @@ svg {
     color: #636e72;
     text-align: center;
     align-items: center;
-    font-size: medium;
+    font-size: large;
     position: absolute;
     bottom: 0;
 
@@ -120,6 +122,11 @@ svg {
 
     -webkit-backface-visibility: hidden;
 	-webkit-transform: scale(1);
+}
+
+.footer > img {
+    width: 15px;
+    height: 15px;
 }
 
 .home {
@@ -130,6 +137,12 @@ svg {
     position: absolute;
     bottom: 30;
     display: inline-block;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+    color: #636e72;
 }
 
 a {
