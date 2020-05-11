@@ -43,7 +43,7 @@ svg {
 /* Class Styling */
 
 .heading {
-    margin: 200px;
+    margin: 10%;
     margin-bottom: 30px;
 }
 
@@ -75,6 +75,7 @@ svg {
     flex-direction: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .box {
@@ -114,18 +115,21 @@ svg {
     font-size: medium;
     position: absolute;
     bottom: 0;
-    left: 42%;
+
+    display: inline-block;
 
     -webkit-backface-visibility: hidden;
 	-webkit-transform: scale(1);
 }
 
 .home {
-    display: flex;
-    flex-direction: column;
-    font-size: medium;
     color: #636e72;
-    top: 50;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    position: absolute;
+    bottom: 30;
+    display: inline-block;
 }
 
 a {
