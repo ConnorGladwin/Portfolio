@@ -194,6 +194,18 @@ h5 {
     color: #fbc531;
 }
 
+.box #html:hover {
+    color: #f06529;
+}
+
+.box #css:hover {
+    color: #2965f1;
+}
+
+.box #js:hover {
+    color: #f0db4f;
+}
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); color: #fbc531; }

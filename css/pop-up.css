@@ -24,8 +24,10 @@ body {
 #popup
 {
   position: fixed;
-  left:25vw;
-  width:50vw; 
+  left:0vw;
+  width:30vw;
+  top: 100px;
+  bottom: 100px; 
   background-color:#EFF1F3;
   color:black;
   -khtml-opacity:0;
