@@ -1,7 +1,7 @@
 /* TODO */
 /* Fix cross device screen alignment issuses */
 
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=DM+Mono:ital@1&display=swap');
 
 /* Parameters for the page */
 
@@ -43,10 +43,6 @@ svg {
 }
 
 /* General Class Styling */
-
-.heading-container {
-
-}
 
 .heading {
     margin: 10%;
@@ -130,13 +126,7 @@ svg {
 	-webkit-transform: scale(1);
 }
 
-.footer > img {
-    width: 15px;
-    height: 15px;
-}
-
 .home {
-    color: #636e72;
     text-align: center;
     align-items: center;
     font-size: medium;
@@ -146,6 +136,11 @@ svg {
 }
 
 img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
     height: 25px;
     width: 25px;
     color: #636e72;
@@ -155,7 +150,25 @@ a {
     text-decoration: none;
 }
 
-/* Page Specific Styling */ 
+/* About Page Styling */ 
+
+.about-container {
+    margin: 20px;
+    font-family: 'DM Mono', monospace;
+}
+
+.about-container {
+    text-align: left;
+}
+
+.about-container > p {
+    width: 800px;
+    font-style: bold;
+    text-align: left;
+    font-size: 50px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
 
 /* Typography */
 
