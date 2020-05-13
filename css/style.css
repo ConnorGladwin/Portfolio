@@ -42,22 +42,24 @@ svg {
     border: solid 10px black;
 }
 
-/* Class Styling */
+/* General Class Styling */
 
 .heading-container {
 
 }
 
 .heading {
-    margin: 200px;
+    margin: 10%;
     margin-bottom: 30px;
 }
 
 .subheading {
-    text-align: inherit;
+    text-align: center;
     top: 50%;
     bottom: 20%;
-    margin: 0;
+    margin: auto;
+
+    width: 400px;
 }
 
 .text {
@@ -81,6 +83,7 @@ svg {
     flex-direction: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .box {
@@ -117,26 +120,42 @@ svg {
     color: #636e72;
     text-align: center;
     align-items: center;
-    font-size: medium;
+    font-size: large;
     position: absolute;
     bottom: 0;
-    left: 42%;
+
+    display: inline-block;
 
     -webkit-backface-visibility: hidden;
 	-webkit-transform: scale(1);
 }
 
+.footer > img {
+    width: 15px;
+    height: 15px;
+}
+
 .home {
-    display: flex;
-    flex-direction: column;
-    font-size: medium;
     color: #636e72;
-    top: 50;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    position: absolute;
+    bottom: 30;
+    display: inline-block;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+    color: #636e72;
 }
 
 a {
     text-decoration: none;
 }
+
+/* Page Specific Styling */ 
 
 /* Typography */
 
@@ -179,6 +198,18 @@ h5 {
 
 .Subheading:hover .subSubheading {
     color: #fbc531;
+}
+
+.box #html:hover {
+    color: #f06529;
+}
+
+.box #css:hover {
+    color: #2965f1;
+}
+
+.box #js:hover {
+    color: #f0db4f;
 }
 
 @keyframes shake {
