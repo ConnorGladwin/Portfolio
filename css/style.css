@@ -5,11 +5,11 @@
 /* Parameters for the page */
 
 html, body {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     margin: 0;
 
@@ -24,21 +24,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Catamaran', sans-serif;
-}
-
-/* SVG Styling */
-
-#svg-height {
-    height: 200px;
-}
-
-.svg-clip {
-    -webkit-clip-path: url(#svgPath);
-    clip-path: url(#svgPath);
-}
-
-svg {
-    border: solid 10px black;
 }
 
 /* General Class Styling */
@@ -79,6 +64,8 @@ svg {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box {
@@ -87,6 +74,7 @@ svg {
     width: 200px;
     margin: 5px;
     display: block;
+    align-items: center;
 }
 
 .title {
@@ -154,6 +142,35 @@ a {
     text-decoration: none;
 }
 
+/* Skills Page Styling */
+
+.skills-wrapper {
+    display: inline-block;
+}
+
+.skills-wrapper > .box-container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-wrapper > .icon-box {
+    margin-right: 100px;
+    margin-left: 100px;
+    
+    height: 100px;
+    width: 100px;
+}
+
+.icon-box > img {
+    display: flex;
+    flex: 1 0 21%;
+    width: 100;
+    height: 100px;
+    justify-content: center;
+    padding: 50px;
+}
+
 /* About Page Styling */ 
 
 .about-container {
@@ -166,10 +183,10 @@ a {
 }
 
 .about-container > p {
-    width: 1000px;
+    width: 1300px;
     font-style: initial;
     text-align: left;
-    font-size: 50px;
+    font-size: 70px;
     color: whitesmoke;
     word-wrap: break-word;
 }
