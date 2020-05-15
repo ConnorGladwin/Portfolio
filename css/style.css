@@ -17,13 +17,13 @@ html, body {
     width: auto;
 
     background-color: #2d3436;
+    font-family: 'DM Mono', monospace;
 }
 
 body {
     
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Catamaran', sans-serif;
 }
 
 /* General Class Styling */
@@ -36,7 +36,7 @@ body {
 .subheading {
     text-align: center;
     top: 50%;
-    bottom: 20%;
+    bottom: 25%;
     margin: auto;
 
     width: 400px;
@@ -53,7 +53,7 @@ body {
     font-size: medium;
     right: 50;
     left: 50;
-    bottom: 62%;
+    bottom: 65%;
     margin: 0;
 }
 
@@ -96,7 +96,7 @@ body {
     transition-duration: 0.3s;
     font-size: small;
     position: absolute;
-    bottom: 50%;
+    bottom: 52%;
 }
 
 .footer {
@@ -180,7 +180,7 @@ a {
 
 .about-container {
     margin: 20px;
-    font-family: 'DM Mono', monospace;
+    /* font-family: 'DM Mono', monospace; */
 }
 
 .about-container {
