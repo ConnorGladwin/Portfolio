@@ -29,7 +29,7 @@ body {
 /* General Class Styling */
 
 .heading {
-    margin: 10%;
+    margin: 5%;
     margin-bottom: 30px;
 }
 
@@ -144,6 +144,11 @@ a {
 
 /* Skills Page Styling */
 
+.skills-wrapper > .heading {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
 .skills-wrapper {
     display: inline-block;
 }
@@ -186,9 +191,37 @@ a {
     width: 1300px;
     font-style: initial;
     text-align: left;
-    font-size: 70px;
-    color: whitesmoke;
+    font-size: 60px;
+    color: #b2bec3;
     word-wrap: break-word;
+}
+
+/* Contact Page Styling */
+
+.contact-wrapper {
+    font-family: 'DM Mono', monospace;
+    color: #b2bec3;
+    width: 1000px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    color: #81ecec;
+}
+
+.contact-title {
+    color: #fbc531;
+}
+
+.paragraph {
+    margin-bottom: 50px;
+}
+
+#thanks {
+    margin-top: 80px;
 }
 
 /* Typography */
