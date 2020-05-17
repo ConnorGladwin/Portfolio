@@ -1,4 +1,21 @@
 <?php
+    $user = 'root';
+    $password = 'root';
+    $db = "contact";
+    $dbhost = 'localhost';
+    $port = 3306;
+
+    $link = mysql_connect (
+        "$host:$port",
+        $user,
+        $password
+    );
+
+    $db_selected = mysql_select_db (
+        $db,
+        $link
+    );
+
     $name = $_POST['name'];
     $customer_email = $_POST['c_email'];
     $message = $_POST['message'];
