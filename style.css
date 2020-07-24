@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    background-image: url(images/geometric-leaves.png);
+}
+
+h1 {
+    font-size: 6em;
+}
+
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #636e72;
+}
+
+.navbar-item {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.collapse {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.heading-container {
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.fp-text>p {
+    font-size: 20px;
+}
+
+.footer {
+    color: #636e72;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+
+    -webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
+}
+
+.footer > img {
+    height: 20px;
+    width: 20px;
+}
