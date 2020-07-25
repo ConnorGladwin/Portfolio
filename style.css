@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
 :root {
     --grey: #2d3436;
     --yellow: #fbc531;
@@ -38,6 +40,7 @@ a:hover {
 
 .fp-text {
     font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .footer {
@@ -58,7 +61,11 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-    .fp-text {
+    .heading-container {
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+    .fp-link {
         visibility: hidden;
     }
 }
