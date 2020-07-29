@@ -1,5 +1,6 @@
 const words = document.querySelector('.words');
 
+// initializes the array
 var wordArray = ['Aspiring Web Dev | ',
                 'Dungeon Master | ',
                 'Cat Dad | ',
@@ -12,6 +13,7 @@ var wordArray = ['Aspiring Web Dev | ',
                 'Night Owl | ',
                 'South African | '];
 
+// randomizes the array
 function shuffle(array) {
     var m = array.length;
     var t;
@@ -32,7 +34,9 @@ function shuffle(array) {
     // return array;
     console.log(array);
 
-    array = array.join(" ").trim();
+    // removes the commas seperating object
+    array = array.join(" ").trim(); 
+    // displays the rearranged array on the webpage
     words.textContent = array  + ' and so much more.';
 };
 
