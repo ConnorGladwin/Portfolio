@@ -121,3 +121,7 @@ a:hover {
 .box {
     display: inline;
 }
+
+.working {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
