@@ -1,127 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+/* TODO */
 
-:root {
-    --grey: #2d3436;
-    --yellow: #fbc531;
-}
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=DM+Mono:wght@500&display=swap');
 
-/* Mobile friendly view */
-@media screen and (max-width: 600px) {
-    .heading-container {
-        margin-top: 200px;
-        margin-bottom: 30px;
-    }
-    .fp-link {
-        visibility: hidden;
-    }
+/* Parameters for the page */
 
-    .project {
-        font-size: 300px;
-    }
+html, body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
 
-    .collapse {
-        font-size: 1px;
-    }
+    height: auto;
+    width: auto;
 
-    .gitLink {
-        padding: 50px;
-    }
+    background-color: #2d3436;
+    font-family: 'DM Mono', monospace;
 }
 
 body {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* General Class Styling */
+
+.heading {
+    margin: 15%;
+    margin-bottom: 30px;
+}
+
+.subheading {
     text-align: center;
-    background-image: url(images/white-waves.png);
+    top: 50%;
+    bottom: 25%;
+    margin: auto;
+
+    width: 400px;
 }
 
-h1 {
-    font-size: 6em;
+.text {
+    margin: 0;
 }
 
-a {
-    font-weight: bold;
-    color: var(--grey);
-
+.subSubheading {
+    color: transparent;
+    font-size: medium;
+    transition-duration: 0.3s;
+    font-size: medium;
+    right: 50;
+    left: 50;
+    bottom: 65%;
+    margin: 0;
 }
 
-a:hover {
-    color: var(--yellow);
-    text-decoration: none;
+.box-container {
+    height: 200px;
+    display: flex;
+    flex-direction: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.navbar-item {
-    margin-left: 10px;
+.box {
+    border: 3px transparent solid;
+    height: 150px;
+    width: 200px;
+    margin: 5px;
+    display: block;
+    align-items: center;
 }
 
-.navbar-brand {
+.title {
+    display: flex;
+    flex-direction: column;
     font-size: 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
-.collapse {
-    margin-right: 30px;
-    font-size: 30px;
-}
-
-.heading-container {
-    margin-top: 10%;
-    margin-bottom: 70px;
-}
-
-.fp-text {
-    font-size: 25px;
-    font-family: 'IBM Plex Sans', sans-serif;
+.subtitle {
+    color: transparent;
+    transition-duration: 0.3s;
+    font-size: small;
+    position: absolute;
+    bottom: 52%;
 }
 
 .footer {
+    color: #636e72;
     text-align: center;
     align-items: center;
     font-size: 20px;
     position: absolute;
     bottom: 0;
-    display: block;
+
+    display: inline-block;
 
     -webkit-backface-visibility: hidden;
 	-webkit-transform: scale(1);
 }
 
 .footer > img {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
 }
 
-/* --- About me styling --- */
-
-.heading {
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.project-words {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 20px;
-    margin: 5%;
-}
-
-.about-box-container {
+.home {
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    position: absolute;
+    bottom: 30;
     display: inline-block;
-    width: auto;
 }
 
-.project {
-    margin-bottom: 10%;
-    font-size: 30px;
+img {
+    width: 20px;
+    height: 20px;
 }
 
-/* Styling for gitHub link */
-.gitLink {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 20px;
-    margin-top: 3%;
+.icon {
+    height: 25px;
+    width: 25px;
+    color: #636e72;
 }
 
-/* Centering for project titles */
-.box {
-    display: inline;
+a {
+    text-decoration: none;
 }
 
-.working {
-    font-family: 'IBM Plex Sans', sans-serif;
+/* Skills Page Styling */
+
+.skills-wrapper > .heading {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.skills-wrapper {
+    display: inline-block;
+}
+
+.skills-wrapper > .box-container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-wrapper > .icon-box {
+    margin-right: 100px;
+    margin-left: 100px;
+    
+    height: 100px;
+    width: 100px;
+}
+
+.icon-box > img {
+    display: flex;
+    flex: 1 0 21%;
+    width: 100;
+    height: 100px;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* About Page Styling */ 
+
+.about-container {
+    margin: 20px;
+    /* font-family: 'DM Mono', monospace; */
+}
+
+.about-container {
+    text-align: left;
+}
+
+.about-container > p {
+    width: 1300px;
+    font-style: initial;
+    text-align: left;
+    font-size: 55px;
+    color: #b2bec3;
+    word-wrap: break-word;
+}
+
+/* Contact Page Styling */
+
+.contact-wrapper {
+    font-family: 'DM Mono', monospace;
+    color: #b2bec3;
+    width: 1000px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    color: #81ecec;
+}
+
+.contact-title {
+    color: #fbc531;
+}
+
+.paragraph {
+    margin-bottom: 50px;
+}
+
+#thanks {
+    margin-top: 80px;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 100px;
+    color: #636e72;
+}
+
+h2 {
+    font-size: 40px;
+    color: #636e72;
+}
+
+h4 {
+    color: #636e72;
+    transition-duration: 0.2s;
+}
+
+h5 {
+    text-align: center;
+}
+
+/* Animations */
+
+.box:hover h4 {
+    color: #81ecec;
+    font-size: 40px;
+}
+
+.box:hover .subtitle {
+    color: #fbc531;
+}
+
+.footer:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.Subheading:hover .subSubheading {
+    color: #fbc531;
+}
+
+.box #html:hover {
+    color: #f06529;
+}
+
+.box #css:hover {
+    color: #2965f1;
+}
+
+.box #js:hover {
+    color: #f0db4f;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); color: #fbc531; }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg);  }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
