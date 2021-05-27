@@ -36,7 +36,7 @@
     </div>
   </nav>
 
-  <div class="flex">
+  <div class="flex mx-auto my-auto">
     <!-- Inputs -->
     <div class="mx-auto">
       <!-- All stat inputs -->
@@ -44,11 +44,19 @@
         <!-- Officer specific -->
         <div class="">
           <!-- Contracts -->
-          <div class="mb-2">
-            <label for="contract">Contracts</label>
-            <!-- onclick event focuses and selects -->
-            <input onclick="this.focus(); this.select();" onchange="contractChange(); calcTotal()"
-              class="border-2 border-black rounded-md mb-2" type="number" name="contract" id="contract" placeholder="0">
+          <div class="flex border-2 border-black rounded-md mb-2 px-1 py-2 ">
+            <div class="mx-2">
+              <label for="app">Application</label>
+              <input onclick="this.focus(); this.select()" onchange="appChange(); calcTotal()"
+                class="border-2 border-black rounded-md mb-2" type="number" name="app" id="app" placeholder="0">
+            </div>
+            <div class="mx-2">
+              <label for="contract">Contracts</label>
+              <!-- onclick event focuses and selects -->
+              <input onclick="this.focus(); this.select();" onchange="contractChange(); calcTotal()"
+                class="border-2 border-black rounded-md mb-2" type="number" name="contract" id="contract"
+                placeholder="0">
+            </div>
           </div>
 
           <!-- Payouts -->
@@ -120,6 +128,13 @@
     <!-- Outputs -->
     <div class="mx-auto">
       <div class="flex flex-col items-center justify-center h-screen">
+        <div class="w-full">
+          <div class="">
+            <label for="">App</label>
+            <p class="wApp border-2 border-black rounded-md text-center my-2">0</p>
+          </div>
+        </div>
+
         <div class="w-full">
           <div class="">
             <label for="">Contract</label>

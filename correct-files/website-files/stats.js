@@ -1,16 +1,25 @@
 // variable declaration for total calc
+let wApp = 0;
 let wContract = 0;
 let wPending = 0;
 let wPayout = 0;
 let wUpdate = 0;
 let wCalls = 0;
 
+// output app value
+function appChange() {
+  input = checkZero(parseInt(document.getElementById('app').value));
+  document.querySelector('.wApp').textContent = input;
+  setStorage('app', input);
+  console.log('click');
+  return(wApp = input);
+}
+
 // output contract value
 function contractChange() {
   input = checkZero(parseInt(document.getElementById('contract').value));
   document.querySelector('.wContract').textContent = input;
   setStorage('contract', input);
-  console.log('click');
   return (wContract = input);
 }
 
@@ -80,6 +89,8 @@ function callChange() {
 
 function calcTotal() {
   console.log(
+    'App',
+    wApp,
     'contracts',
     wContract,
     'pendings',
@@ -91,7 +102,7 @@ function calcTotal() {
     'calls',
     wCalls
   );
-  const total = wContract + wPending + wPayout + wUpdate + wCalls;
+  const total = wApp + wContract + wPending + wPayout + wUpdate + wCalls;
   document.querySelector('.wTotal').textContent = checkZero(total);
 }
 
