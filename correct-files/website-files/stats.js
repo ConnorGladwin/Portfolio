@@ -122,6 +122,8 @@ function setStorage(key, value) {
 function getStorage() {
   // gets all values from local storage, sets them as the input
   // and reruns the functions to update the total values
+  document.getElementById('app').value = localStorage.getItem('app');
+  appChange
   document.getElementById('contract').value = localStorage.getItem('contract');
   contractChange();
   document.getElementById('pending').value = localStorage.getItem('pending');
