@@ -9,7 +9,7 @@ let wCalls = 0;
 // output app value
 function appChange() {
   input = checkZero(parseInt(document.getElementById('app').value));
-  document.querySelector('.wApp').textContent = input;
+  // document.querySelector('.wApp').textContent = input;
   setStorage('app', input);
   console.log('click');
   return(wApp = input);
@@ -18,7 +18,7 @@ function appChange() {
 // output contract value
 function contractChange() {
   input = checkZero(parseInt(document.getElementById('contract').value));
-  document.querySelector('.wContract').textContent = input;
+  // document.querySelector('.wContract').textContent = input;
   setStorage('contract', input);
   return (wContract = input);
 }
@@ -39,10 +39,14 @@ function payoutChange() {
   return (wPayout = input);
 }
 
+function calcNBO() {
+  input = checkZero(wApp) + checkZero(wContract);
+  document.querySelector('.nbo').textContent = input;
+}
+
 function calcPayout() {
   input = checkZero(wPayout) + checkZero(wPending);
   document.querySelector('.wPayout').textContent = input;
-  calcTotal();
 }
 
 // output calculated update value
@@ -132,6 +136,7 @@ function getStorage() {
   appChange();
   document.getElementById('contract').value = localStorage.getItem('contract');
   contractChange();
+  calcNBO();
   document.getElementById('pending').value = localStorage.getItem('pending');
   pendingChange();
   document.getElementById('payout').value = localStorage.getItem('payout');
