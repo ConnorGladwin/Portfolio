@@ -1,9 +1,0 @@
-Current release: V1.1
-
-- Redundancies found in displaying weighted totals of both applications and contracts as both do not require weighting before final activity total worth is calculated. Both have now been collated into a single output field displayed as NBO.
-
-- Redundancies found in displaying weighted totals of both pendings and payouts as both do not require weighting before final activity total worth is calculated. Both have now been collated into a single output field displayed as Payout.
-
-- Both App and Pending display fields removed. 
-
-- Though a marginal decline in load and display time of the web app has been noted, it is still well below 2000 miliseconds and can be optimized in the next version.
