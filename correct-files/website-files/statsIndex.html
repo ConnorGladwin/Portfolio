@@ -36,7 +36,7 @@
     </div>
   </nav>
 
-  <div class="flex mx-14 my-14">
+  <div class="flex mx-auto my-36">
     <!-- Inputs -->
     <div class="mx-auto">
       <!-- All stat inputs -->
@@ -63,13 +63,13 @@
           <div class="flex border-2 border-black rounded-md mb-2 px-1 py-2">
             <div class="mx-2">
               <label for="pPending">Payout Pendings</label>
-              <input onclick="this.focus(); this.select()" onchange="pendingChange(); calcTotal()"
+              <input onclick="this.focus(); this.select()" onchange="pendingChange(); calcPayout(); calcTotal()"
                 class="border-2 border-black rounded-md mb-2" type="number" name="pPayout" id="pending" placeholder="0">
             </div>
 
             <div class="mx-2">
               <label for="payout">Payouts</label>
-              <input onclick="this.focus(); this.select()" onchange="payoutChange(); calcTotal()"
+              <input onclick="this.focus(); this.select()" onchange="payoutChange(); calcPayout(); calcTotal()"
                 class="border-2 border-black rounded-md mb-2" type="number" name="payout" id="payout" placeholder="0">
             </div>
           </div>
@@ -131,49 +131,42 @@
         <div class="w-full">
           <div class="">
             <label for="">App</label>
-            <p class="wApp border-2 border-black rounded-md text-center my-2">0</p>
+            <p class="wApp border-2 border-black rounded-md text-center mb-2">0</p>
           </div>
         </div>
 
         <div class="w-full">
           <div class="">
             <label for="">Contract</label>
-            <p class="wContract border-2 border-black rounded-md text-center my-2">0</p>
-          </div>
-        </div>
-
-        <div class="w-full">
-          <div class="w-full">
-            <label for="">Payout Pending</label>
-            <p class="wPending border-2 border-black rounded-md text-center my-2">0</p>
+            <p class="wContract border-2 border-black rounded-md text-center mb-2">0</p>
           </div>
         </div>
 
         <div class="w-full">
           <div class="">
             <label for="">Payout</label>
-            <p class="wPayout border-2 border-black rounded-md text-center my-2">0</p>
+            <p class="wPayout border-2 border-black rounded-md text-center mb-2">0</p>
           </div>
         </div>
 
         <div class="w-full">
           <div class="">
             <label for="">Updates</label>
-            <p class="wUpdates border-2 border-black rounded-md text-center my-2">0</p>
+            <p class="wUpdates border-2 border-black rounded-md text-center mb-2">0</p>
           </div>
         </div>
 
         <div class="w-full">
           <div class="">
             <label for="">Weighted Calls</label>
-            <p class="wCalls border-2 border-black rounded-md text-center my-2">0</p>
+            <p class="wCalls border-2 border-black rounded-md text-center mb-2">0</p>
           </div>
         </div>
 
         <div class="w-full">
           <div class="">
             <label for="">Total Actions</label>
-            <p class="wTotal border-2 border-black rounded-md text-center my-2">0</p>
+            <p class="wTotal border-2 border-black rounded-md text-center mb-2">0</p>
           </div>
         </div>
       </div>

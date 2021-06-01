@@ -26,7 +26,7 @@ function contractChange() {
 // output payout pending value
 function pendingChange() {
   input = checkZero(parseInt(document.getElementById('pending').value));
-  document.querySelector('.wPending').textContent = input;
+  // document.querySelector('.wPending').textContent = input;
   setStorage('pending', input);
   return (wPending = input);
 }
@@ -34,9 +34,15 @@ function pendingChange() {
 // output payout value
 function payoutChange() {
   input = checkZero(parseInt(document.getElementById('payout').value));
-  document.querySelector('.wPayout').textContent = input;
+  // document.querySelector('.wPayout').textContent = (input);
   setStorage('payout', input);
   return (wPayout = input);
+}
+
+function calcPayout() {
+  input = checkZero(wPayout) + checkZero(wPending);
+  document.querySelector('.wPayout').textContent = input;
+  calcTotal();
 }
 
 // output calculated update value
@@ -130,6 +136,7 @@ function getStorage() {
   pendingChange();
   document.getElementById('payout').value = localStorage.getItem('payout');
   payoutChange();
+  calcPayout();
   document.getElementById('mUpdate').value = localStorage.getItem('mUpdate');
   document.getElementById('pUpdate').value = localStorage.getItem('pUpdate');
   updateChange();
