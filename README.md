@@ -23,4 +23,4 @@ Release - v1.1
 
 # Impacts 
 
-  - Though a marginal decline in load and display time of the web app has been noted, it is still well below 2000 miliseconds and can be optimized in the next version.
+  - Though a marginal decline in load and display time of the web app has been noted, it is still well below 2000 miliseconds on a fibre line and between 1700 and 5000 milliseconds on a 3G connection, this can be optimized in the next version.
